@@ -22,4 +22,6 @@ In this project I deployed my machine learning model to large scale real time ne
 ## Architecture
 [Back to Table of Contents](README.md#Architecture)
 
+![Capture](https://user-images.githubusercontent.com/27971359/61181582-8b5a4e80-a5f6-11e9-9b74-24d3bafeeee9.PNG)
+
 
