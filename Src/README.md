@@ -17,7 +17,7 @@ Nazli Ansari
 
 Days by Days we hear a lot about cybersecurity attacks and how much expensive and time consumin it is. Therefore, it is necessary to have an automated an accurate system to monitor live traffic through web servers and alert engineers or admins of the potential risks.
 
-In this project I deployed my machine learning model to large scale real time network data and I tried to monitor web server traffic and predict potential attacks in real time. This tool can detect 5 different kond of attacks (DDoS, Botnet, Brute Force, Infilteration, Web-based and port scan)
+In this project I deployed my machine learning model to large scale real time network data and I tried to monitor web server traffic and predict potential attacks in real time. This tool can detect 6 different kind of attacks (DDoS, Botnet, Brute Force, Infilteration, Web-based and port scan)
 
 ## Architecture
 [Back to Table of Contents](README.md#Architecture)
