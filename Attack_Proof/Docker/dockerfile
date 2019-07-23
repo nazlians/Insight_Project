@@ -1,10 +1,9 @@
-#FROM fanxia08/numpydarknet_cpu:v1
-FROM fanxia08/numpydarknet_gpu:v3
-
+FROM continuumio/anaconda:4.4.0
+MAINTAINER UNP, https://unp.education
 Run \
-    pip3 install mysql-connector-python pika \
-    && git clone https://github.com/fanxia/InsightDE_project.git
-
-WORKDIR InsightDE_project/ZooTube/src
-ENTRYPOINT ["python3","-u","consumer.py"]
-CMD ["bash"]
+     pip3 install mysql -connector-python\
+     && pip install r requirments.txt
+WORKDIR Insight_Project/Attack_Proof/src
+RUN pip install -r requirments.txt
+CMD["bash"]
+     
