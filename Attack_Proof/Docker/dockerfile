@@ -2,8 +2,9 @@ FROM continuumio/anaconda:4.4.0
 MAINTAINER UNP, https://unp.education
 Run \
      pip3 install mysql -connector-python\
-     && pip install r requirments.txt
+     
 WORKDIR Insight_Project/Attack_Proof/src
+ENTRYPOINT ["python3","-u","consumer.py"]
 RUN pip install -r requirments.txt
 CMD["bash"]
      
