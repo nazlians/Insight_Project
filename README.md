@@ -23,4 +23,24 @@ In this project I deployed my machine learning model to large scale real time ne
 [Back to Table of Contents](README.md#Architecture)
 ![Capture](https://user-images.githubusercontent.com/27971359/61181582-8b5a4e80-a5f6-11e9-9b74-24d3bafeeee9.PNG)
 
+## Running Instruction
+[Back to Table of Contents](README.md#Running_Instruction)
+To gain a copy of this project and test this project: git clone https://github.com/nazlians/Insight_Project
 
+"Attack Proof" runs a pipeline on the AWS cloud, using the following cluster configurations:
+
+*  four m4.large EC2 instances for Kafka
+*  three m4.large EC2 instances for Docker and deploying model
+*  One m4.large EC2 instances to run MySQL and the Dash front-end application
+
+Using Kafka to ingest traffic stream simulated from a file on S3, Docker to predicted potential attacks in 5 second intervals using a pre-trained model by Random Forest and MySQL to store the processed data to be queried, the data is then rendered in Dash to show real-time updates to server traffic or attack predictions every second.
+
+To replicate my pipeline follow the following steps:
+
+1) Install zookeeper v3.4.13 and kafka v 1.10 on kafka Cluster and start zookeeper and kafka
+2) Build Consumer Docker Image
+3) Install MySQl
+4) Install Dash, Dash-core-components, and Dash-html-components python packages on Dash node
+
+## Files in Repo
+[Back to Table of Contents](README.md#repo-directory-structure)
